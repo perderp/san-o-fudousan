@@ -1,0 +1,15 @@
+.c-scroll{
+    position:fixed;
+    bottom: 4vw;
+    right: 6vw;
+    cursor: pointer;
+    img{
+        width: 100%;
+        @include is-tablet{
+            width:8vw;
+        }
+        @include is-sp{
+            width: 10vw;
+        }
+    }
+}

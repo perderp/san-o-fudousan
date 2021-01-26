@@ -1,0 +1,33 @@
+.p-case {
+    &__inner {}
+    &__ul{
+        flex-wrap:wrap;
+        justify-content: space-around;
+        @include is-pc02{
+            justify-content: center;
+        }
+        &--right,
+        &--left{
+            @include is-tablet{
+                width: 100%;
+                justify-content: space-around;
+            }
+        }
+    }
+
+    &__li {
+        height:100%;
+        @include is-pc{
+            width:calc(100%/6);
+            padding:1em 0;
+        }
+        @include is-tablet{
+            width:calc(100%/3);
+            padding:1em 0;
+        }
+        @include is-sp{
+            width:calc(100%/3);
+            padding:1em 0;
+        }
+    }
+}

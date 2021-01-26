@@ -1,0 +1,131 @@
+.p-footer{
+    background-color:#F5F7FA;
+    &__inner{}
+    &__top{
+        padding-top:100px;
+        padding-bottom:30px;
+    }
+    &__center{
+        hr{
+            border-top:1px solid $colortext-secondary;
+        }
+    }
+    &__bottom{
+        padding-top:76px;
+        padding-bottom:60px;
+    }
+    &__navigation{}
+
+    &__logo{
+        text-align:center;
+    }
+    .navigation{
+        margin-top:46px;
+        margin-left:56px;
+        margin-right:56px;  
+        @include is-tablet{
+            margin-left:0;
+            margin-right:0;
+        }
+        @include is-sp{
+            margin-left:0;
+            margin-right:0;
+        }
+        &__top,
+        &__bottom{
+            margin:30px 0;
+        }
+        &__ul{
+            place-content: center;
+            flex-wrap:wrap;
+        }
+        &__li{
+            padding:0.5em 1em;
+            a{
+                font-family: "KozGoPro-Light", "小塚ゴシック Pro L", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif !important;
+                @include is-sp{
+                    @include font-line(14);
+                }
+            }
+        }
+    }
+    .corporate{
+        margin:79px 56px;
+        @include is-sp{
+            margin:0;
+        }
+        @include is-tablet{
+            margin:79px 0;
+        }
+        &__left{
+            width:20%;
+            justify-content: space-around;
+            @include is-sp{
+                width:100%;
+                padding:10px;
+                justify-content: start;
+            }
+            @include is-tablet02{
+                width:100%;
+            }
+            p{
+                font-weight:700;
+            }
+        }
+        &__center,&__right{
+            width:calc(80%/2);
+            justify-content:space-between;
+            align-items: center;
+            span{
+                font-weight:700;
+            }
+            @include is-tablet02{
+                width:100%;
+            }
+            @include is-sp{
+                width:100%;
+                padding:10px;
+                p{
+                    @include font-line(14);
+                }
+            }
+        }
+
+        &__desc{
+            width:80%;
+            @include is-sp{
+                width:100%;
+                padding:10px;
+                p{
+                    @include font-line(14);
+                }
+            }
+        }
+        &__top,&__bottom{
+            @include is-tablet02{
+                flex-wrap:wrap;
+                margin:20px 0px !important;
+            }
+            @include is-sp{
+                flex-wrap:wrap;
+                margin:20px 0px !important;
+            }
+        }
+        &__left{
+            align-items: center;
+            p{
+                color:$colortext-secondary;
+            }
+        }
+        &__center{}
+        &__right{}
+    }
+
+    .copyright{
+        text-align:center;
+        p,a{
+            color:$colortext-secondary;
+            @include font-line(12);
+        }
+    }
+}

@@ -1,0 +1,109 @@
+@charset "UTF-8";
+@import "../core/**/*";
+
+.profile-banner{
+    background:url(../../../../tinified/personal/personal-banner.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.profile-slug{
+    &__inner{
+        justify-content: flex-end;
+        p{
+            @include is-sp{
+                @include font-line(14);
+            }
+        }
+    }
+}
+
+.philosophy{
+    &__inner{}
+    &__top{}
+    &__bottom{
+        padding: 20px 0 117px;
+        @include is-tablet{
+            padding-bottom:40px;
+        }
+        @include is-sp{
+            padding-bottom:40px;
+        }
+    }
+    &__content{}
+    &__justify{
+        text-align:justify;
+    }
+    &__txtright{
+        text-align:right;
+        font-weight:700;
+    }
+}
+.history{
+    background-color:#F5F7FA;
+    padding:110px 0 0 0;
+    @include is-tablet{
+        padding-top:40px;
+    }
+    @include is-sp{
+        padding-top:40px;
+    }
+    &__bottom{
+        padding: 20px 0 117px;
+        @include is-tablet{
+            padding-bottom:40px;
+        }
+        @include is-sp{
+            padding-bottom:40px;
+        }
+    }
+}
+.business{
+    padding:80px 0 0 0;
+    @include is-tablet{
+        padding-top:40px;
+    }
+    @include is-sp{
+        padding-top:40px;
+    }
+    &__bottom{
+        padding: 20px 0 117px;
+        @include is-tablet{
+            padding-bottom:40px;
+        }
+        @include is-sp{
+            padding-bottom:40px;
+        }
+    }
+}
+
+.group{
+    background-color:#F5F7FA;
+    padding:110px 0 0 0;
+    @include is-tablet{
+        padding-top:40px;
+    }
+    @include is-sp{
+        padding-top:40px;
+    }
+    &__center01,
+    &__center02,
+    &__center03,
+    &__center04{
+        padding: 86px 0 60px;
+        @include is-tablet{
+            padding:40px 0 40px;
+        }
+        @include is-sp{
+            padding:40px 0 40px;
+        }
+    }
+    &__bottom{
+        padding: 86px 0 117px;
+        @include is-tablet{
+            padding:40px 0 40px;
+        }
+        @include is-sp{
+            padding:40px 0 40px;
+        }
+    }
+}

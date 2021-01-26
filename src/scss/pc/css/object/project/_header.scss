@@ -1,0 +1,121 @@
+.p-header{
+    
+    &__inner{
+        max-width:1280px;
+        margin:0 auto;
+        @include is-pc{
+            padding:0 1em;
+        }
+        @include is-pc02{
+            padding:0 1em;
+        }
+        @include is-tablet{
+            margin:0 auto;
+            // padding:0 1em;
+        }
+     
+        @include is-sp{
+            margin:0 auto;
+            // padding: 0 1em;
+        }
+        
+    }
+    .header01{
+        display:flex;
+        justify-content: space-between;
+        flex-wrap:wrap;
+        @include is-tablet{
+            justify-content: center;
+        }
+        @include is-sp{
+            justify-content: center;
+        }
+        &__left{
+            align-items: center;
+        }
+        &__right{}
+        
+        &__left,
+        &__right{
+            padding:10px 0;
+        }
+
+        .navigation{
+            text-align: right;
+            width:360px;
+            text-align:center;
+            @include is-sp{
+                width:300px;
+            }
+            &__ul{}
+            &__li{
+                a{
+                    font-family: "KozGoPro-Light", "小塚ゴシック Pro L", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif !important;
+                }
+            }
+            &__top,
+            &__bottom{
+                justify-content: space-around;
+            }
+        }
+    }
+    .header02{
+        &__inner{}
+        &__top{
+            align-items: center;
+        }
+        &__right{
+            justify-content: flex-end;
+        }
+        &__bottom{
+            text-align: center;
+        }
+
+        &__left,
+        &__right{
+            width:50%;
+            padding:0 1em;
+        }
+
+        &__logo{
+            img{
+                width:100%;
+            }
+        }
+
+
+        .navigation02{ 
+            position: absolute;
+            width:100%;
+            background-color:#ffff;
+            z-index:2;
+            &__li{
+                a{
+                    font-family: "KozGoPro-Light", "小塚ゴシック Pro L", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif !important;
+                }
+                padding:.5em 0;
+                border-bottom:1px solid #D9E7FA;
+                &:hover{
+                    // background-color:#405F8E;
+                    background-color:$colortext-secondary;
+                    a{
+                        color:#ffff;
+                    }
+                }
+            }
+            &__ul{
+
+            }
+        }
+        .hamburger-icon{
+            @include font-line(40);
+        }
+    }
+    
+}
+.showNav{
+    display: block;
+}
+.showClose{
+    display:none;
+}

@@ -1,0 +1,28 @@
+.c-banner{
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:260px;
+
+    justify-content: center;
+    align-items: center;
+
+    img{
+        @include is-tablet{
+            width:60%;
+        }
+        @include is-sp{
+            width:50%;
+        }
+    }
+    h1{
+        font-family:$font-family02;
+        color:#FFFF;
+        font-weight:500;
+        @include is-pc{
+            @include font-line(60);
+        }
+        @include is-tablet{
+            @include font-line(40);
+        }
+    }
+}

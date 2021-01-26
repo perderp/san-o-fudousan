@@ -1,0 +1,67 @@
+@charset "UTF-8";
+@import "../core/**/*";
+
+
+.business-banner{
+    background:url(../../../../tinified/personal/personal-banner.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.business-slug{
+    &__inner{
+        justify-content: flex-end;
+        p{
+            @include is-sp{
+                @include font-line(14);
+            }
+        }
+    }
+}
+.bcommercial{
+    &__bottom{
+        padding:20px 0 117px 0;
+        @include is-tablet{
+            padding-bottom:40px;
+        }
+        @include is-sp{
+            padding-bottom:40px;
+        }
+    }
+}
+.bdevelopment{
+    background-color:#F5F7FA;
+    padding-top:110px;
+    @include is-tablet{
+        padding-top:40px;
+    }
+    @include is-sp{
+        padding-top:40px;
+    }
+    &__bottom{
+        padding:20px 0 117px 0;
+        @include is-tablet{
+            padding-bottom:40px;
+        }
+        @include is-sp{
+            padding-bottom:40px;
+        }
+    }
+}
+.bconsult{
+    padding-top:80px ;
+    @include is-tablet{
+        padding-top:40px;
+    }
+    @include is-sp{
+        padding-top:40px;
+    }
+    &__bottom{
+        padding:20px 0 117px 0;
+        @include is-tablet{
+            padding-bottom:0;
+        }
+        @include is-sp{
+            padding-bottom:0;
+        }
+    }
+}

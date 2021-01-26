@@ -1,0 +1,184 @@
+.c-content{
+    &__wrap{
+        max-width:887px;
+        margin:0 auto;
+        @include is-pc02{
+            max-width:100%;
+            padding:0 1em;
+        }
+        @include is-tablet{
+            max-width:100%;
+        }
+        @include is-sp{
+            max-width:100%;
+        }
+    }
+    &__title{
+        p{
+            color:$colortext-secondary;
+            font-family:$font-family02;
+            font-weight: 500;
+            @include font-line(22);
+            @include is-sp{
+                @include font-line(18);
+            }
+        }
+
+        span{
+            color:$colortext-secondary;
+            font-family:$font-family02;
+            @include font-line(12);
+        }
+        .title__span{
+            line-height:.5;
+        }
+    }
+    &__desc{
+        margin-top:36px;
+        @include is-sp{
+            margin-top:15px;
+        }
+        p{
+            @include is-sp{
+                @include font-line(14);
+            }
+        }
+    }
+    &__li{
+        flex-wrap:wrap;
+        li{
+            list-style-type: disc;
+            padding:0 10px;
+            @include is-sp{
+                @include font-line(14);
+            }
+        }
+        &--left,
+        &--right{
+            width:50%;
+            @include is-tablet{
+                width:100%;
+            }
+            @include is-sp{
+                width:100%;
+            }
+        }
+        &--v2{
+            li{
+                list-style-type:none;
+            }
+        }
+
+        &--v3{
+            li{
+                list-style-type: decimal;
+                color:$colortext-secondary;
+            }
+            span{
+                padding-left:1em;
+            }
+        }
+    }
+    &__hr{
+        border:none;
+        border-top: 1px dotted $colortext-secondary;
+        max-width:970px;
+        margin:0 auto;
+
+    }
+    &__img{
+        padding:2em 0 0 0;
+        text-align:center;
+    }
+
+    &__arrow{
+        text-align:center;
+        margin:15px 0;
+        img{
+            width:auto;
+        }
+    }
+    &__arrowdesc{
+        text-align:center;
+        background-color:#D9E7FA;
+        padding:1em;
+        p{
+            color:$colortext-secondary;
+            @include is-sp{
+                @include font-line(14);
+            }
+        }
+    }
+
+    &__table{
+        .table{
+            &__tr{}
+            &__td{}
+        }
+        //Business
+        .year{
+            color:$colortext-secondary;
+            width:150px;
+            @include is-sp{
+                width:131px;
+                @include font-line(14);
+            }
+        }
+        .month{
+            color:$colortext-secondary;
+            text-align:center;
+            width:30px;
+            @include is-sp{
+                @include font-line(14);
+            }
+        }
+        //History
+        .department{
+            color:$colortext-secondary;
+            // padding-right:1em;
+            width:128px;
+            @include is-sp{
+                @include font-line(14);
+            }
+        }
+        //Group
+        .item{
+            color:$colortext-secondary;
+            padding-right:1em;
+            @include is-sp{
+                @include font-line(14);
+            }
+        }
+        .desc{
+            @include is-sp{
+                @include font-line(14);
+            }
+        }
+    }
+
+    &__group{
+        flex-wrap:wrap;
+        li{
+            width:calc(100%/5);
+            @include is-tablet{
+                width:100%;
+            }
+            @include is-sp{
+                width:100%;
+            }
+        }
+    }
+    &__group02{
+        padding:20px 0;
+        flex-wrap:wrap;
+        li{
+            width:calc(100%/4);
+            @include is-tablet{
+                width:100%;
+            }
+            @include is-sp{
+                width:100%;
+            }
+        }
+    }
+}

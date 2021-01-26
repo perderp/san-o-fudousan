@@ -1,0 +1,262 @@
+@charset "UTF-8";
+@import "../core/**/*";
+.kozGo{
+     font-family: "KozGoPro-Light", "小塚ゴシック Pro L", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif !important;
+}
+.hero{
+    background:url(../../../../tinified/hero/hero-banner.png);
+    height: 660px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    position:relative;
+    overflow-x: hidden;
+    @include is-tablet{
+        height:63vh;
+    }
+    @include is-sp{
+        height:60vh;
+    }
+    &::before{
+        content:'';
+        background-color: #FFFF;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        animation:opa .5s linear both;
+    }
+    &__top{}
+    &__title{
+        p{
+            @include font-line(70,140);
+            @include is-tablet{
+                @include font-line(40,90);
+            }
+            @include is-sp{
+                @include font-line(30,60);
+            }
+            font-weight: 700;
+        }
+    }
+    &__subtitle{
+        p{
+            @include font-line(48);
+            font-family: $font-family02;
+            @include is-tablet{
+                @include font-line(38);
+            }
+            @include is-sp{
+                @include font-line(26);
+            }
+        }
+    }
+}
+
+
+
+.info{
+    position: relative;
+    &__inner{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.info02{
+    position: relative;
+    &__inner{}
+
+    &__ul{
+        width:100%;
+        flex-wrap:wrap;
+    }
+    &__li{
+        width:calc(100%/3);
+        @include is-tablet{
+            width:calc(100%/2);
+        }
+        @include is-sp{
+            width:calc(100%/2);
+        }
+    }
+}
+.contents{
+    position: relative;
+    &__inner{}
+    &__top{}
+    &__center{}
+    &__bottom{}
+    &__title{
+        text-align: center;
+    }
+
+    &__desc{
+        text-align: center;
+        p{
+            font-weight: 700;
+            @include font-line(24);
+            @include is-tablet{
+                @include font-line(18);
+            }
+            @include is-sp{
+                @include font-line(18);
+            }
+        }
+    }
+    &__overlay{
+        img{
+            position:absolute;
+            left:-5%;
+            top:0;
+            width: 41vw;
+            height: 100%;
+            @include is-pc02{
+                display:none;
+            }
+            @include is-tablet{
+                display:none;
+            }
+            @include is-sp{
+                display:none;
+            }
+        }
+    }
+    .justify-me{
+        justify-content:flex-end;
+        @include is-pc02{
+            justify-content:center;
+        }
+        @include is-tablet{
+            justify-content:center;
+        }
+        @include is-sp{
+            justify-content:center;
+        }
+    }
+    .customer{
+        &__left,&__right{
+            width:50%;
+            place-content:center;
+        }
+        &__btn{
+            position: relative;
+            height: 100px;
+            width: 90%;
+            border-radius: 10px;
+            background: linear-gradient(to left, $colortext-primary 50%, $colortext-secondary 50%) right;
+            background-size: 201%;
+            transition: .5s ease-out;
+            align-items: center;
+            justify-content: center;
+            &:hover{
+                background-position: left;
+            }
+            p{
+                color:#FFFF;
+                margin-right:1em;
+                @include is-sp{
+                    margin-right:.5em;
+                    @include font-line(14);
+                }
+            }
+            img{
+                width: 24.6%;
+                height: 100%;
+                @include is-tablet02{
+                    width:20.4%;
+                }
+                @include is-sp{
+                    width:20.4%;
+                }
+            }
+            @include is-tablet02{
+                width:95%;
+                height: 66px;
+            }
+            @include is-sp{
+                width:95%;
+                height: 66px;
+            }
+        }
+    }
+    .categories{
+
+        &__top,&__bottom{
+            justify-content: center;
+            flex-wrap:wrap;
+            margin:26px 0;
+        }
+        &__btn{
+            width: calc(100%/3);
+            a{
+                width: 100%;
+                display:flex;
+                align-items:center;
+                justify-content: space-around;
+            }
+            img{
+                @include is-tablet02{
+                    width:29%;
+                }
+                @include is-sp{
+                    width:29%;
+                }
+            }
+            p{
+                @include is-sp{
+                    font-size:3.1vw;
+                }
+            }
+        }
+    }
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: -20%;
+    list-style: none;
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    li {
+        position: relative;
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        margin: 0 5px;
+        padding: 0;
+        cursor: pointer;
+        button {
+            border: 0;
+            background: transparent;
+            display: block;
+            height: 20px;
+            width: 20px;
+            outline: none;
+            line-height: 0px;
+            font-size: 0px;
+            color: transparent;
+            padding: 5px;
+            cursor: pointer;
+            &:hover, &:focus {
+                outline: none;
+            }
+            &:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                content:url('../../../../tinified/common/carousel-btn.svg');
+                width: 20px;
+                height: 20px;
+                line-height: 20px;
+                text-align: center;
+                opacity:1;
+            }
+        }
+        &.slick-active button:before {
+            content:url('../../../../tinified/common/carousel-btnactive.svg');
+        }
+    }
+}

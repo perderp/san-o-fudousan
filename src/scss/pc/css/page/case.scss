@@ -1,0 +1,238 @@
+@charset "UTF-8";
+@import "../core/**/*";
+
+.case-banner{
+    background:url(../../../../tinified/personal/personal-banner.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.case-slug{
+    &__inner{
+        justify-content: flex-end;
+        p{
+            @include is-sp{
+                @include font-line(14);
+            }
+        }
+    }
+}
+.flow{
+    &__inner{}
+    &__top{}
+    &__bottom{
+        padding:20px 0 117px 0 ;
+        @include is-tablet{
+            padding-bottom:40px;
+        }
+        @include is-sp{
+            padding-bottom:40px;
+        }
+    }
+}
+.asset{
+    background-color:#F5F7FA;
+    padding:110px 0 0 0;    
+    @include is-tablet{
+        padding-top:40px;
+    }
+    @include is-sp{
+        padding-top:40px;
+    }
+    &__bottom{
+        padding-bottom:117px;
+        @include is-tablet{
+            padding-bottom:40px;
+        }
+        @include is-sp{
+            padding-bottom:40px;
+        }
+    }
+    &__center01{
+        padding-top:20px;
+    }
+
+    &__content{
+        &--top{}
+        &--center{}
+        &--bottom{
+            margin-top:20px;
+        }
+    }
+    &__blue{
+        text-align:center;
+        p{
+            color:#0B1C3F;
+        }
+    }
+    &__ul{
+        padding:2em 0;
+        background-color:#0B1C3F;
+        justify-content: center;
+        flex-wrap:wrap;
+    }
+    &__li{
+        color:#FFF;
+        padding:0 1em;
+    }
+
+    .acard{
+        padding:20px 0;
+        &__inner{
+            border:1px solid $colortext-secondary;
+            padding:1em;
+        }
+        &__top{
+            p{
+                color:$colortext-secondary;
+            }
+        }
+        &__bottom{}
+    }
+    .util{
+        &__title{
+            color:$colortext-secondary;
+            @include font-line(18);
+        }
+        &__desc{
+            span{
+                color:$colortext-secondary;
+                &::before{
+                    content:'【';
+                }
+                &::after{
+                    content:'】';
+                }
+            }
+        }
+    }
+}
+.inheritance{
+    padding-top:80px;
+    @include is-tablet{
+        padding-top:40px;
+    }
+    @include is-sp{
+        padding-top:40px;
+    }
+    &__inner{}
+    &__top{}
+    &__center01{
+        padding-top:20px;
+        padding-bottom:60px;
+        @include is-tablet{
+            padding:20px 0 40px;
+        }
+        @include is-sp{
+            padding:20px 0 40px;
+        }
+        .center01{
+            &--top{}
+            &--bottom{
+                padding-top:20px;
+            }
+            &__content{
+                &--blue{
+                    color:$colortext-secondary;
+                }
+            }
+        }
+
+    }
+    &__center02,
+    &__center03,
+    &__center04,
+    &__center05,
+    &__center06{
+        padding:86px 0 60px 0;
+        @include is-tablet{
+            padding:40px 0 40px;
+        }
+        @include is-sp{
+            padding:40px 0 40px;
+        }
+    }
+    &__bottom{
+        padding:86px 0 117px 0 ;
+        @include is-tablet{
+            padding:40px 0 40px;
+        }
+        @include is-sp{
+            padding:40px 0 40px;
+        }
+    }
+}
+
+.purchase{
+    background-color:#F5F7FA;
+    padding:110px 0 0 0;
+    @include is-tablet{
+        padding-top:40px;
+    }
+    @include is-sp{
+        padding-top:40px;
+    }
+    &__content{
+        &--blue{
+            color:$colortext-secondary;
+            font-family: $font-family02;
+            @include font-line(18);
+        }
+    }
+    &__top{}
+    &__center01,
+    &__center02{
+        padding:86px 0 60px 0;
+        @include is-tablet{
+            padding:40px 0 40px;
+        }
+        @include is-sp{
+            padding:40px 0 40px;
+        }
+    }
+    &__bottom{
+        padding:67px 0 117px 0 ;
+        @include is-tablet{
+            padding:40px 0 40px;
+        }
+        @include is-sp{
+            padding:40px 0 40px;
+        }
+    }
+}
+
+.sales{
+    padding-top:80px;
+    @include is-tablet{
+        padding-top:40px;
+    }
+    @include is-sp{
+        padding-top:40px;
+    }
+    &__content{
+        &--blue{
+            color:$colortext-secondary;
+            font-family: $font-family02;
+            @include font-line(18);
+        }
+    }
+    
+    &__center01,
+    &__center02{
+        padding:86px 0 60px 0;
+        @include is-tablet{
+            padding:40px 0 40px;
+        }
+        @include is-sp{
+            padding:40px 0 40px;
+        }
+    }
+    &__bottom{
+        padding:67px 0 117px 0 ;
+        @include is-tablet{
+            padding:40px 0 40px;
+        }
+        @include is-sp{
+            padding:40px 0 40px;
+        }
+    }
+}

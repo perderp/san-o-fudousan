@@ -1,0 +1,308 @@
+// .card{
+//     position: relative; 
+//     width:330px;
+//     padding:.5em;
+//     @include is-pc02{
+//         // margin:15px;
+       
+//     }
+//     @include is-tablet{
+//         // margin:15px;
+//         width:220px;
+//     }
+//     @include is-sp{
+//         // margin:15px;
+//     }
+//     &:hover{
+//         .card__overlay{
+//             animation: zoom 0.6s linear both;
+//         }
+//         .btn{
+//             animation: rotate 0.6s ease-in-out both;
+//         }
+//     }
+//     &__top{
+//         position: relative;
+//         overflow: hidden;
+//         border-radius: 10px;
+//         width: 100%;
+
+//     }
+//     &__bottom{
+//         justify-content: flex-end;
+//     }
+//     &__overlay{
+//         position: absolute;
+//         z-index: -1;
+//         // img{
+//         //     min-height:330px;
+//         // }
+//     }
+//     &__text{
+//         align-items: center;
+//         justify-content: center;
+//         height:330px;
+//         @include is-tablet{
+//             // margin:15px;
+//             width:220px;
+//             height:220px;
+//         }
+//     }
+//     &__title{
+//         text-align:center;
+//         p{
+//             margin-top:28px;
+//             color:$colortext01;
+//             @include font-line(24);
+//         }
+//     }
+//     @include is-pc{
+//         &:first-child{
+//             margin-left:0;
+//         }
+//         &:last-child{
+//             margin-right:0;
+//         }
+//     }
+
+// }
+
+.c-card01{
+    position:relative;
+    margin:.5em;
+    &__inner{}
+    &__top{
+        position:relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        height:100%;
+        border-radius:10px;
+        padding:6vw 0;
+        @include is-tablet{
+            padding:33% 0;
+        }
+        @include is-tablet02{
+            padding:27% 0;
+        }
+        @include is-sp{
+            padding:30% 0;
+        }
+    }
+    &__bottom{
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    &__text{
+        text-align:center;
+    }
+    &__title{
+        align-items:center;
+        &--subtitle{
+            // margin-top:1em;
+            color:$colortext01;
+            @include font-line(20);
+            @include is-sp{
+                @include font-line(14);
+            }
+        }
+        &--title{
+            color:$colortext01;
+            font-family: $font-family02;
+            margin-top:0;
+            @include font-line(38);
+            @include is-sp{
+                @include font-line(18);
+            }
+            font-weight:500;
+
+        }
+    }
+    &__overlay{
+        position: absolute;
+        width:100%;
+        z-index:-1;
+        img{
+            width:100%;
+            height:100%;
+        }
+    }
+    &__btn{
+        justify-content: flex-end;
+        img{
+            width:49%;
+        }
+    }
+    .btn{
+        margin-left:1em;
+        @include is-sp{
+            width:30%;
+        }
+    }
+    &:hover{
+        .c-card01__overlay{
+            img{
+                animation: zoom 0.6s linear both;
+            }
+        }
+        .btn{
+            animation: rotate 0.6s ease-in-out both;
+        }
+    }
+}
+
+.c-card02{
+    width:calc(100%/3);
+    // margin: 0 auto;
+    padding:.5em;
+    @include is-tablet{
+        width:calc(100%/2);
+    }
+    @include is-sp{
+        width:calc(100%/2);
+    }
+    &__inner{
+        border:1px solid $colortext-secondary;
+        height: 100%;
+    }
+    &__top{
+        img{
+            width:100%;
+            object-fit: cover;
+        }
+    }
+    &__center{
+        p,
+        span{
+            color:$colortext-secondary;
+        }
+        p{
+            @include font-line(12);
+        }
+        span{
+            @include font-line(16);
+            font-weight:700;
+        }
+    }
+    &__bottom{
+        span{
+            background-color:$colortext-secondary;
+            color:#FFF;
+            @include font-line(12);
+            padding:.4em;
+        }
+    }
+
+    &__center,
+    &__bottom{
+        padding:.4em .5em;
+    }
+}
+
+.c-card03{
+    position:relative;
+    width:100%;
+    height:100%;
+    padding:0 .8em;
+    @include is-tablet{
+        padding:.8em 0;
+    }
+    @include is-sp{
+        padding:.8em 0;
+    }
+    &__inner{}
+    &__top{
+        text-align:center;
+        p{
+            background-color:#0B1C3F;
+            color:#FFF;
+        }
+    }
+    &__bottom{
+        margin-top:10px;
+        p{
+            @include font-line(14);
+        }
+    }
+    &__last{
+        &::after{
+            display:none;
+        }
+    }
+    @include is-pc{
+        &::after{
+            content:"";
+            background-image:url(../../../tinified/case/ico_tri.png);
+            width:15px;
+            height:17px;
+            background-repeat: no-repeat;
+            top: 3%;
+            right:-5%;
+            position:absolute;
+            transform:translateY(-3%);
+        }
+
+    }
+    @include is-tablet{
+        &::after{
+            // content:url(../../../../tinified/personal/personal-banner.png);
+    
+            content:"";
+            background-image:url(../../../tinified/case/ico_tri2.png);
+            width:18px;
+            height:16px;
+            background-repeat: no-repeat;
+            bottom:-5%;
+            left:50%;
+            position:absolute;
+            transform:translateX(-50%);
+    
+        }
+    }
+    @include is-sp{
+        &::after{
+            // content:url(../../../../tinified/personal/personal-banner.png);
+    
+            content:"";
+            background-image:url(../../../tinified/case/ico_tri2.png);
+            width:18px;
+            height:16px;
+            background-repeat: no-repeat;
+            bottom:-5%;
+            left:50%;
+            position:absolute;
+            transform:translateX(-50%);
+    
+        }
+    }
+
+
+}
+
+.c-card04{
+    width:100%;
+    height:100%;
+    padding:0 .8em;
+    @include is-tablet{
+        padding:.8em 0;
+    }
+    @include is-sp{
+        padding:.8em 0;
+    }
+    &__inner{
+        border:1px solid $colortext-secondary;
+        height:100%;
+        width:100%;
+        min-height:100px;
+        align-items: center;
+        justify-content: center;
+    }
+    &__desc{
+        padding:0 .5em;
+        p{
+            @include font-line(12);
+        }
+    }
+}

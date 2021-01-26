@@ -1,0 +1,50 @@
+@charset "UTF-8";
+@import "../core/**/*";
+
+.results-banner{
+    background:url(../../../../tinified/personal/personal-banner.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.results-slug{
+    &__inner{
+        justify-content: flex-end;
+        p{
+            @include is-sp{
+                @include font-line(14);
+            }
+        }
+    }
+}
+
+.business{
+    &__inner{}
+    &__top{}
+    &__center01{}
+    &__center02{}
+    &__bottom{}
+
+    &__content{
+        &--wrap{
+            display:flex;
+            flex-wrap:wrap;
+        }
+    }
+}
+
+.brokerage{
+    background-color:#F5F7FA;
+    padding:110px 0 127px 0;
+    @include is-tablet{
+        padding:40px 0 40px 0;
+    }
+    @include is-sp{
+        padding:40px 0 40px 0;
+    }
+    &__content{
+        &--wrap{
+            display:flex;
+            flex-wrap:wrap;
+        }
+    }
+}

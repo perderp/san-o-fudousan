@@ -1,0 +1,33 @@
+.c-btn{
+    width:100%;
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    p{
+        @include is-pc02{
+            @include font-line(12);
+        }
+        @include is-sp{
+            font-size:3.1vw;
+        }
+    }
+    img{
+        margin-left:.5em;
+        width:60px;
+        @include is-pc02{
+            margin-left:.2em;
+            width:5vw;
+        }
+        @include is-tablet{
+            width:21%;
+        }
+        @include is-tablet02{
+            width:40px;
+        }
+        @include is-sp{
+            width:27.5%;
+            height: 100%;
+        }
+    }
+}

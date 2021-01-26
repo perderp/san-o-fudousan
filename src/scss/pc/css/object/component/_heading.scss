@@ -1,0 +1,59 @@
+.c-heading{
+    position: relative;
+    border-bottom:1px solid $colortext-primary;
+    &__title{
+        text-align:center;
+        position:relative;
+        z-index:1;
+        p{
+            @include font-line(32,64);
+            font-weight: 700;
+            @include is-tablet02{
+                @include font-line(24,48);
+            }
+            @include is-sp{
+                @include font-line(20,36);
+            }
+        }
+    }
+    &__img{
+        position: absolute;
+        bottom:0;
+        left:1vw;
+        img{
+            // width:13.9vw;
+            width:80%;
+            @include is-pc02{
+                width:65%;
+            }
+            @include is-tablet{
+                width:55%;
+            }
+            @include is-tablet02{
+                width:45%;
+            }
+            @include is-sp{
+                width:35%;
+                opacity:0.8;
+            }
+        }
+        &--v2{
+            img{
+                width:auto;
+                @include is-pc02{
+                    width:65%;
+                }
+                @include is-tablet{
+                    width:55%;
+                }
+                @include is-tablet02{
+                    width:45%;
+                }
+                @include is-sp{
+                    width:35%;
+                }
+            }
+        }
+    }
+
+}

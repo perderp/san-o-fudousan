@@ -1,0 +1,187 @@
+@charset "UTF-8";
+@import "../core/**/*";
+
+.personal-banner{
+    background:url(../../../../tinified/personal/personal-banner.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.personal-slug{
+    &__inner{
+        justify-content: flex-end;
+        p{
+            @include is-sp{
+                @include font-line(14);
+            }
+        }
+    }
+}
+
+.pbuy{
+    &__inner{}
+    &__top{}
+    &__center{
+        padding:86px 0 60px 0;
+        @include is-tablet{
+            padding:40px 0 40px 0;
+        }
+        @include is-sp{
+            padding:40px 0 40px 0;
+        }
+    }
+    &__bottom{
+        padding:67px 0 117px 0 ;
+        @include is-tablet{
+            padding:40px 0 40px 0;
+        }
+        @include is-sp{
+            padding:40px 0 40px 0;
+        }
+    }
+    &__content{
+        &--top,
+        &--bottom{
+            p{
+                padding:22px 0;
+                font-weight: 500;
+                @include is-sp{
+                    padding:10px 0;
+                }
+            }
+        }
+        &--top{
+            p{
+                padding: 0 0 10px 0;
+            }
+        }
+        &--bottom{
+            li{
+                padding:0;
+            }
+        }
+    }
+}
+
+.psell{
+    background-color:#F5F7FA;
+    padding:110px 0 0 0;
+    @include is-tablet{
+        padding-top:40px;
+    }
+    @include is-sp{
+        padding-top:40px;
+    }
+    &__inner{}
+    &__top{}
+    &__center{
+        padding:86px 0 60px 0;
+        @include is-tablet{
+            padding:40px 0 40px 0;
+        }
+        @include is-sp{
+            padding:40px 0 40px 0;
+        }
+    }
+    &__bottom{
+        padding:67px 0 117px 0 ;
+        @include is-tablet{
+            padding:40px 0 40px 0;
+        }
+        @include is-sp{
+            padding:40px 0 40px 0;
+        }
+    }
+    &__content{
+        &--top,
+        &--bottom{
+            p{
+                padding:22px 0;
+                font-weight: 500;
+                @include is-sp{
+                    padding:10px 0;
+                }
+            }
+        }
+        &--top{
+            p{
+                padding: 0 0 10px 0;
+            }
+        }
+        &--bottom{
+            li{
+                padding:0;
+            }
+        }
+    }
+}
+
+.prent{
+    padding:80px 0 0 0;
+    @include is-tablet{
+        padding-top:40px;
+    }
+    @include is-sp{
+        padding-top:40px;
+    }
+    &__inner{}
+    &__top{}
+    &__bottom{
+        padding:86px 0 127px 0;
+        @include is-tablet{
+            padding:40px 0 40px 0;
+        }
+        @include is-sp{
+            padding:40px 0 40px 0;
+        }
+    }
+    &__content{
+        &--top,
+        &--center,
+        &--bottom{
+            padding:22px 0;
+            @include is-sp{
+                padding:10px 0;
+            }
+            p{
+                padding:0;
+            }
+        }
+        &--bottom{
+            li{
+                padding:0;
+            }
+        }
+    }
+}
+
+.plend{
+    background-color:#F5F7FA;
+    padding:110px 0 0 0;
+    @include is-tablet{
+        padding-top:40px;
+    }
+    @include is-sp{
+        padding-top:40px;
+    }
+    &__inner{}
+    &__top{}
+    &__bottom{
+        padding:86px 0 107px 0;
+        @include is-tablet{
+            padding:40px 0 40px 0;
+        }
+        @include is-sp{
+            padding:40px 0 40px 0;
+        }
+    }
+    &__content{
+        &--top,
+        &--center,
+        &--bottom{
+            padding:22px 0;
+            @include is-sp{
+                padding-top:10px 0;
+            }
+        }
+    }
+}
