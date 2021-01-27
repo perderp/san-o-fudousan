@@ -55,7 +55,8 @@ gulp build
 gulp sync
 ```
 
-:warning: Note: Make changes only in **`src/`** folder.
+:warning: Note: Make changes only in **`src/`** folder. (Development)
+:warning: Note: For Sending to FTP copy the **`public/`** folder (Production)
 
 ## <a name='Contributing'></a> :memo:Contributing to san-o-fudousan
 
